@@ -1,0 +1,162 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Pacifico', serif;
+  font-weight: 800;
+  margin: 5px auto;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+#headlines {
+  margin: 70px auto 20px auto;
+  width: 350px;
+  text-align: center;
+}
+
+/* input styles */
+
+input {
+  width: 198px;
+  height: 50px;
+  display: block;
+  margin: 20px auto 0px auto;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #FFF;
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
+  color: #000;
+}
+
+::-webkit-input-placeholder {
+   color: #A1A1A1;
+   font-size: 14px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #A1A1A1;  
+   font-size: 14px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #A1A1A1; 
+   font-size: 14px; 
+}
+
+:-ms-input-placeholder {  
+   color: #A1A1A1;
+   font-size: 14px;  
+}
+
+input:focus {
+  border-color: #b2cffd;
+  outline-style: none;
+  background-color: #e5effe;
+}
+
+/* button styles*/
+
+button {
+  display: block;
+  width: 200px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Francois One', sans-serif;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+button:active {
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.main-cta {
+  height: 50px;
+  margin: 5px auto 13px auto;
+  background-color: #fc6ba3;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 3px #da0456;
+}
+
+.main-cta:hover {
+  background-color: #fc458b;
+}
+
+.main-cta:active {
+  box-shadow: 0 2px #da0456;
+}
+
+.secondary-cta {
+  height: 35px;
+  margin: 5px auto;
+  background-color: #92bbfc;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 2px #1f73fa;
+}
+
+.secondary-cta:hover {
+ background-color: #7faffc;
+}
+
+.secondary-cta:active {
+  box-shadow: 0 1px #1f73fa;
+}
+
+/* status message styles (to appear after user submits guess) */
+
+#guesses-remaining {
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
+  margin: 10px auto;
+}
+
+#status-messages {
+  text-align: center;
+  font-family: 'Pacifico', sans-serif;
+  margin: 20px auto;
+  font-size: 18px;
+  color: #000;
+  display: none;
+}
+
+/* background styles (to be added depending on game status)*/
+
+.bg {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.lose-bg {
+  background-color: #fee5ef;
+  /*background-color: #fa0060;*/
+}
+
+.win-bg {
+  background-color: #dffecc;
+}

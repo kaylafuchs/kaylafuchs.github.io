@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Kayla Fuchs's Guessing Game </title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Pacifico|Open+Sans:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="guessingGame.js"></script>
+  </head>
+  <body>
+    <div id="headlines">
+      <h2 id="pre-head">
+        I'm thinking of a number between 1 and 100...
+      </h2>
+      <h1 id="headline">
+        Think you can guess it?
+      </h1>
+    </div>
+    <div id="game">
+      <input type="text" name="num" placeholder="Enter a number here">
+      </input>
+      <button type="button" class="main-cta">
+        Guess Now &rsaquo;
+      </button>
+      <button type="button" class="secondary-cta">
+        Get a hint
+      </button>
+      <button type="button" class="secondary-cta">
+        New game
+      </button>
+    </div>
+    <div id="status-messages" class="game-status">
+    </div>
+    <div id="guesses-remaining">
+    </div>
+  </body>
+</html>
